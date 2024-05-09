@@ -24,10 +24,14 @@ input {
 }
 
 body {
-    background-color: rgb(233, 233, 233)
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
+    width: 100vw;
     background-color: white;
     padding: 1rem;
     display: flex;
@@ -44,4 +48,18 @@ nav ul {
 
 nav ul  li {
     margin-right: 2rem;
+}
+
+main {background-color: white; margin: 2rem;
+padding: 2rem; border-radius: 2rem;
+width: fit-content;
+min-width: 50%;}
+
+#signupform input {
+    display: block;
+    margin: 3rem 0;
+}
+#signupform button {
+    display: block;
+    margin-top: 3rem;
 }
