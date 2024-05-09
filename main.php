@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,9 +22,18 @@ require "pages/header.php";
     <!-- =====================================MAIN================================= -->
 
 <main>
+<?php 
+ if (isset( $_SESSION['uidUsers']))
+    {
+        echo "<p>You are logged in!</p>";
+    }
+else {
+        echo "<p>You are NOT logged in.</p>";
+        
+    echo "USERID: " . $_SESSION['uidUsers'];
 
-    <p>You are logged out!</p>
-    <p>You are logged in!</p>
+}
+?>
 
 </main>
 

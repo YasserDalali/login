@@ -61,8 +61,9 @@ if (isset($_POST['signup-submit'])) {
             $sql = "INSERT INTO Users (uidUsers, emailUsers, pwdUsers) VALUES ('{$username}', '{$mail}' ,'{$pwd}')";
             $result = mysqli_query($cnx, $sql);
             if ($result) {
-                header("Location: ../signup.php?MazelTov");
+                header("Location: ../main.php");
             }
         }
     }
 }
+
