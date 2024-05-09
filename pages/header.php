@@ -7,23 +7,27 @@ session_start();
         <a href="">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Bandar_Abbas_government_logo.svg/200px-Bandar_Abbas_government_logo.svg.png" alt="logo" width="50px">
         </a>
-
+<!-- 
         <ul>
             <li>page0</li>
             <li>page1</li>
             <li>page2</li>
             <li>page3</li>
-        </ul>
+        </ul> -->
         <div>
             <!-- ----------------LOGIN FORM------------------------ -->
 
 <?php
 
- if (isset($_SESSION['userId']))
+ if (isset($_SESSION['uidUsers']))
  {
-  echo               '<form action="includes/logout.inc.php" method="post">
-                <button type="submit" name="logout-submit">Logout</button>
-            </form>';
+   echo     
+   '<form action="includes/logout.inc.php" method="post">'
+   .
+    $_SESSION['uidUsers']
+   .
+   '<button style="margin-left: 1rem;" type="submit" name="logout-submit">Logout</button>
+    </form>'; 
  }
 
  else {
@@ -34,11 +38,11 @@ session_start();
     <button type="submit" name="login-submit">Login</button>
     <small><a href="signup.php">Sign-up</a></small>
 </form>';
+} 
 
- }
+ 
 ?>
              
-            <!-- ----------------LOGOUT FORM------------------------ -->
 
 
         </div>

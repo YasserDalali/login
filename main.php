@@ -29,9 +29,6 @@ require "pages/header.php";
     }
 else {
         echo "<p>You are NOT logged in.</p>";
-        
-    echo "USERID: " . $_SESSION['uidUsers'];
-
 }
 ?>
 
