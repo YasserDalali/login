@@ -1,5 +1,5 @@
 <?php
-require "header.php";
+require "pages/header.php";
 ?>
     <link rel="stylesheet" href="includes/style.inc.css">
 <main>
@@ -14,5 +14,5 @@ require "header.php";
 </form>
 </main>
 <?php
-require "footer.php";
+require "pages/footer.php";
 ?>
