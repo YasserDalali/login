@@ -25,10 +25,10 @@ require "pages/header.php";
 <?php 
  if (isset( $_SESSION['uidUsers']))
     {
-        echo "<p>You are logged in!</p>";
+        echo "<p>Welcome, {$_SESSION['uidUsers']}!</p>";
     }
 else {
-        echo "<p>You are NOT logged in.</p>";
+        echo "<p>Please Login.</p>";
 }
 ?>
 
