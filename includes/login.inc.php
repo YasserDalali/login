@@ -23,11 +23,11 @@ if (isset($_POST['login-submit'])) {
     if (mysqli_num_rows($result) === 1)
      {
         $row = mysqli_fetch_assoc($result);
-        print($row);
+
+
         session_start();
 
         $_SESSION['uidUsers'] = $row['uidUsers'];
-
         header("Location: ../main.php?logged");
      }
 

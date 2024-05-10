@@ -26,6 +26,8 @@ require "pages/header.php";
  if (isset( $_SESSION['uidUsers']))
     {
         echo "<p>Welcome, {$_SESSION['uidUsers']}!</p>";
+        require 'IP_report_creator/index.php'; // Include index.php
+
     }
 else {
         echo "<p>Please Login.</p>";
