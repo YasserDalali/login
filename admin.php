@@ -1,9 +1,6 @@
 <?php
 require 'includes/table.inc.php'
 ?>
-
-<body>
-
     <table class="table">
         <thead class="thead-dark">
             <th>ID</th>
@@ -24,8 +21,3 @@ require 'includes/table.inc.php'
 
 
     </table>
-
-
-</body>
-
-</html>

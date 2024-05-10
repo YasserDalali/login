@@ -2,7 +2,6 @@
 require "pages/header.php";
 include "includes/signup.inc.php"
 ?>
-    <link rel="stylesheet" href="includes/style.inc.css">
 <main>
 <h1>sign-up</h1>
 
@@ -17,7 +16,7 @@ include "includes/signup.inc.php"
 
     <input type="password" name="pwd" placeholder="password">
     <input type="password" name="pwd-repeat" placeholder="repeat password">
-    <button type="submit" name="signup-submit">Sign-up</button>
+    <button type="submit" name="signup-submit" class="btn btn-dark">Sign-up</button>
 
 </form>
 
