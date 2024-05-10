@@ -6,22 +6,6 @@
     padding: 0;
 }
 
-button {
-    background-color: black;
-    border: 0;
-    border-radius: 10px;
-    color: white;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-input {
-    background-color: rgb(226, 226, 226);
-    border: 0;
-    border-radius: 10px;
-    padding: 0.5rem;
-
-}
 
 body {
     background-color: rgb(233, 233, 233);
@@ -35,9 +19,8 @@ nav {
     background-color: white;
     padding: 1rem;
     display: flex !important;
-    justify-content: space-around !important;
-    align-items: center !important;
-    
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul {
@@ -52,7 +35,7 @@ nav ul  li {
 
 main {background-color: white; margin: 2rem;
 padding: 2rem; border-radius: 2rem;
-width: fit-content;
+width: 80%;
 }
 
 #signupform input {

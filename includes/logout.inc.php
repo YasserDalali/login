@@ -1,6 +1,5 @@
 <?php
-session_unset();
-header('Location ../main');
-exit();
-
+    session_destroy();
+    header("Location: ../main.php");
+    exit;
 

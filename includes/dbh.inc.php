@@ -1,12 +1,11 @@
 <?php
+    $user = 'root';
+    $password = "";
+    $host = 'localhost';
+    $db = 'loginsystemphp';
 
-    $servername = "localhost";
-    $DBusername = "root";
-    $DBpwd = "";
-    $DBname = "loginsystemphp";
-
-    $cnx = mysqli_connect($servername, $DBusername, $DBpwd, $DBname);
-
+    $cnx = mysqli_connect($host, $user, $password, $db);
+    
     if (!$cnx) {
-        die("Connection failed: ".mysqli_connect_error());
+        echo "Error connecting to DB";
     }
